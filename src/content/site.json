@@ -1,0 +1,719 @@
+[
+ {
+  "id": "studio",
+  "path": "/chi-siamo/",
+  "parent": "/",
+  "order": 1,
+  "kind": "page",
+  "image": "/assets/chi-siamo.webp",
+  "it": {
+   "label": "Chi siamo",
+   "title": "Chi siamo: storia, valori e approccio dello Studio",
+   "description": "Lo Studio Legale dell'Avv. Antonio Circosta unisce radici locali e prospettiva internazionale: diritto internazionale, societario e compliance normativa.",
+   "summary": "Uno studio nato per offrire assistenza giuridica di alto livello, capace di coniugare radici locali e prospettiva internazionale."
+  },
+  "en": {
+   "label": "About Us",
+   "title": "About us: our history, values and approach",
+   "description": "The law firm of Antonio Circosta, Attorney at Law, combines local roots with an international outlook in international law, corporate law and compliance.",
+   "summary": "A firm founded to provide high-level legal assistance, combining local roots with an international perspective."
+  },
+  "es": {
+   "label": "Quiénes somos",
+   "title": "Quiénes somos: historia, valores y enfoque",
+   "description": "El despacho del abogado Antonio Circosta une raíces locales y perspectiva internacional en derecho internacional, derecho societario y cumplimiento normativo.",
+   "summary": "Un despacho creado para ofrecer asistencia jurídica de alto nivel, capaz de conjugar raíces locales y perspectiva internacional."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "aree",
+  "path": "/aree-di-attivita/",
+  "parent": "/",
+  "order": 2,
+  "kind": "index",
+  "image": "/assets/3f405417bbb7.webp",
+  "it": {
+   "label": "Aree di attività",
+   "title": "Aree di attività: diritto internazionale e nazionale",
+   "description": "Aree di attività dello Studio: diritto internazionale e societario, compliance, diritto canonico, ecclesiastico, diritti umani, civile, penale, amministrativo.",
+   "summary": "Specializzazioni legali per affrontare contesti complessi, in ambito internazionale e davanti alle giurisdizioni italiane."
+  },
+  "en": {
+   "label": "Practice Areas",
+   "title": "Practice areas: international and domestic law",
+   "description": "The Firm's practice areas: international law, corporate law, compliance, canon and ecclesiastical law, human rights, civil, criminal and administrative law.",
+   "summary": "Legal specialisations for complex contexts, both internationally and before the Italian courts."
+  },
+  "es": {
+   "label": "Áreas de práctica",
+   "title": "Áreas de práctica: derecho internacional y nacional",
+   "description": "Áreas de práctica del Despacho: derecho internacional, societario, compliance, derecho canónico y eclesiástico, derechos humanos, civil, penal y administrativo.",
+   "summary": "Especializaciones jurídicas para afrontar contextos complejos, en el ámbito internacional y ante los tribunales italianos."
+  }
+ },
+ {
+  "id": "internazionale",
+  "path": "/aree-di-attivita/internazionale/",
+  "parent": "/aree-di-attivita/",
+  "order": 1,
+  "kind": "page",
+  "image": "/assets/diritto-internazionale-globale.webp",
+  "it": {
+   "label": "Diritto internazionale e globale",
+   "title": "Avvocato per il diritto internazionale e globale",
+   "description": "Contratti transnazionali, contenziosi, arbitrati e diritti umani: lo Studio affianca imprese, istituzioni e privati nel diritto internazionale e globale.",
+   "summary": "Assistenza a imprese, istituzioni e privati in contratti transnazionali, contenziosi, arbitrati e tutela dei diritti umani davanti alle corti nazionali e sovranazionali."
+  },
+  "en": {
+   "label": "International and Global Law",
+   "title": "International and global law attorney",
+   "description": "Cross-border contracts, disputes, arbitration and human rights: we support companies, institutions and individuals in international and global law.",
+   "summary": "Support for companies, institutions and individuals in cross-border contracts, international disputes, arbitration and human rights before national and international courts."
+  },
+  "es": {
+   "label": "Derecho internacional y global",
+   "title": "Abogado de derecho internacional y global",
+   "description": "Contratos transfronterizos, litigios, arbitrajes y derechos humanos: acompañamos a empresas, instituciones y particulares en el derecho internacional y global.",
+   "summary": "Asistencia a empresas, instituciones y particulares en contratos transfronterizos, litigios, arbitrajes y defensa de los derechos humanos ante tribunales nacionales e internacionales."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-internazionale",
+  "path": "/aree-di-attivita/internazionale/diritto-internazionale/",
+  "parent": "/aree-di-attivita/internazionale/",
+  "order": 1,
+  "kind": "page",
+  "image": null,
+  "it": {
+   "label": "Diritto internazionale",
+   "title": "Avvocato di diritto internazionale e arbitrato",
+   "description": "Contratti transnazionali, contenzioso e arbitrato internazionale, diritti umani: lo Studio Circosta assiste imprese, enti e privati oltre i confini nazionali.",
+   "summary": "Contratti transnazionali, contenziosi internazionali, arbitrato e tutela dei diritti fondamentali per imprese, enti e privati che operano oltre i confini nazionali."
+  },
+  "en": {
+   "label": "International Law",
+   "title": "International law and arbitration attorney",
+   "description": "Cross-border contracts, international litigation, arbitration and human rights: the Circosta Law Firm supports clients operating across borders.",
+   "summary": "Cross-border contracts, international disputes, arbitration and protection of fundamental rights for companies, institutions and individuals operating across borders."
+  },
+  "es": {
+   "label": "Derecho internacional",
+   "title": "Abogado de derecho internacional y arbitraje",
+   "description": "Contratos transfronterizos, litigios, arbitraje internacional y derechos humanos: el Despacho Circosta asiste a clientes más allá de las fronteras.",
+   "summary": "Contratos transfronterizos, litigios internacionales, arbitraje y defensa de los derechos fundamentales para empresas, instituciones y particulares que actúan más allá de las fronteras."
+  }
+ },
+ {
+  "id": "diritti-umani",
+  "path": "/aree-di-attivita/internazionale/diritti-umani/",
+  "parent": "/aree-di-attivita/internazionale/",
+  "order": 2,
+  "kind": "page",
+  "image": "/assets/diritti-umani.webp",
+  "it": {
+   "label": "Diritti umani",
+   "title": "Avvocato per i diritti umani e la tutela internazionale",
+   "description": "Tutela dei diritti umani in Italia e all'estero: contenzioso davanti a tribunali interni e corti sovranazionali, prevenzione e standard internazionali.",
+   "summary": "Assistenza e rappresentanza legale nella tutela dei diritti umani, davanti ai tribunali nazionali e alle corti sovranazionali, e consulenza preventiva per imprese e istituzioni."
+  },
+  "en": {
+   "label": "Human Rights",
+   "title": "Human rights lawyer: national and international defence",
+   "description": "Human rights protection at national and international level: litigation before domestic and supranational courts, prevention and international standards.",
+   "summary": "Legal assistance and representation in the protection of human rights before domestic courts and supranational tribunals, and preventive advice for businesses and institutions."
+  },
+  "es": {
+   "label": "Derechos humanos",
+   "title": "Abogado de derechos humanos y tutela internacional",
+   "description": "Protección de los derechos humanos a nivel nacional e internacional: litigios ante tribunales internos y supranacionales, prevención y estándares globales.",
+   "summary": "Representación y asesoría jurídica en la protección de los derechos humanos ante tribunales nacionales y supranacionales, y asesoramiento preventivo para empresas e instituciones."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-ecclesiastico",
+  "path": "/aree-di-attivita/internazionale/diritto-ecclesiastico/",
+  "parent": "/aree-di-attivita/internazionale/",
+  "order": 3,
+  "kind": "page",
+  "image": "/assets/diritto-ecclesiastico.webp",
+  "it": {
+   "label": "Diritto ecclesiastico",
+   "title": "Avvocato di diritto ecclesiastico ed enti religiosi",
+   "description": "Consulenza in diritto ecclesiastico per istituzioni religiose, fondazioni e associazioni: riconoscimento giuridico, governance, aspetti patrimoniali e fiscali.",
+   "summary": "Consulenza a istituzioni religiose, fondazioni, associazioni e privati in tutte le questioni in cui si intrecciano fede e diritto."
+  },
+  "en": {
+   "label": "Ecclesiastical Law",
+   "title": "Ecclesiastical law and religious entities lawyer",
+   "description": "Ecclesiastical law advice for religious institutions, foundations and associations: legal recognition, governance, property, tax and cross-border issues.",
+   "summary": "Advice for religious institutions, foundations, associations and individuals in all matters where faith and law intersect."
+  },
+  "es": {
+   "label": "Derecho eclesiástico",
+   "title": "Abogado de derecho eclesiástico y entidades religiosas",
+   "description": "Derecho eclesiástico para instituciones religiosas, fundaciones y asociaciones: reconocimiento jurídico, gobernanza y cuestiones patrimoniales y fiscales.",
+   "summary": "Asesoramiento a instituciones religiosas, fundaciones, asociaciones y particulares en todas las cuestiones donde la fe y el derecho se encuentran."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-canonico",
+  "path": "/aree-di-attivita/internazionale/diritto-canonico/",
+  "parent": "/aree-di-attivita/internazionale/",
+  "order": 4,
+  "kind": "page",
+  "image": "/assets/diritto-canonico.webp",
+  "it": {
+   "label": "Diritto canonico",
+   "title": "Avvocato di diritto canonico e nullità matrimoniale",
+   "description": "Assistenza in diritto canonico: procedure canoniche, validità dei sacramenti, cause di nullità matrimoniale e procedimenti davanti ai tribunali ecclesiastici.",
+   "summary": "Servizi specializzati in diritto canonico per istituzioni religiose, membri del clero e privati, anche nei procedimenti davanti ai tribunali ecclesiastici."
+  },
+  "en": {
+   "label": "Canon Law",
+   "title": "Canon law and marriage nullity lawyer",
+   "description": "Canon law assistance: canonical procedures, validity of sacraments, marriage nullity cases and representation before ecclesiastical tribunals.",
+   "summary": "Specialised Canon Law services for religious institutions, clergy and individuals, including proceedings before ecclesiastical tribunals."
+  },
+  "es": {
+   "label": "Derecho canónico",
+   "title": "Abogado de derecho canónico y nulidad matrimonial",
+   "description": "Asistencia en derecho canónico: procedimientos canónicos, validez de los sacramentos, causas de nulidad matrimonial y procesos ante tribunales eclesiásticos.",
+   "summary": "Servicios especializados en derecho canónico para instituciones religiosas, miembros del clero y particulares, también en procesos ante tribunales eclesiásticos."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "impresa",
+  "path": "/aree-di-attivita/impresa/",
+  "parent": "/aree-di-attivita/",
+  "order": 2,
+  "kind": "page",
+  "image": "/assets/diritto-societario-impresa.webp",
+  "it": {
+   "label": "Diritto societario e impresa",
+   "title": "Avvocato per il diritto societario e d'impresa",
+   "description": "Consulenza in diritto societario e d'impresa: costituzione di società, governance, fusioni e acquisizioni, contratti internazionali e contenzioso societario.",
+   "summary": "Assistenza a imprese, start-up, fondazioni e investitori in tutte le fasi della vita societaria, dalla costituzione alle operazioni straordinarie."
+  },
+  "en": {
+   "label": "Corporate and Business Law",
+   "title": "Corporate and business law attorney",
+   "description": "Corporate and business law advice: company formation, governance, mergers and acquisitions, international contracts and complex corporate litigation.",
+   "summary": "Comprehensive assistance for companies, start-ups, foundations and investors throughout the corporate lifecycle, from formation to extraordinary transactions."
+  },
+  "es": {
+   "label": "Derecho societario y de empresa",
+   "title": "Abogado de derecho societario y de empresa",
+   "description": "Asesoría en derecho societario y de empresa: constitución de sociedades, gobierno corporativo, fusiones y adquisiciones, contratos y litigios societarios.",
+   "summary": "Asesoría integral a compañías, start-ups, fundaciones e inversores en todas las etapas de la vida societaria, desde la constitución hasta las operaciones extraordinarias."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-societario",
+  "path": "/aree-di-attivita/impresa/diritto-societario-e-commerciale/",
+  "parent": "/aree-di-attivita/impresa/",
+  "order": 1,
+  "kind": "page",
+  "image": "/assets/diritto-societario-commerciale.webp",
+  "it": {
+   "label": "Diritto societario e commerciale",
+   "title": "Avvocato diritto societario e commerciale",
+   "description": "Diritto societario e commerciale: governance, ristrutturazioni, fusioni e acquisizioni, rapporti tra soci, contratti commerciali e joint venture internazionali.",
+   "summary": "Accompagniamo le imprese nella gestione quotidiana e nelle operazioni straordinarie: governance, M&A, rapporti tra soci e contratti commerciali."
+  },
+  "en": {
+   "label": "Corporate and Commercial Law",
+   "title": "Corporate and commercial law attorney",
+   "description": "Corporate and commercial law: governance, restructuring, mergers and acquisitions, shareholder relations, commercial contracts and international joint ventures.",
+   "summary": "We guide companies in day-to-day operations and extraordinary transactions: governance, M&A, shareholder relations and commercial contracts."
+  },
+  "es": {
+   "label": "Derecho societario y mercantil",
+   "title": "Abogado de derecho societario y mercantil",
+   "description": "Derecho societario y mercantil: gobierno corporativo, reestructuraciones, fusiones y adquisiciones, relaciones entre socios, contratos y joint ventures.",
+   "summary": "Acompañamos a las empresas en su gestión diaria y en las operaciones extraordinarias: gobierno corporativo, fusiones y adquisiciones, socios y contratos."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "compliance",
+  "path": "/aree-di-attivita/impresa/risk-management-e-compliance/",
+  "parent": "/aree-di-attivita/impresa/",
+  "order": 2,
+  "kind": "page",
+  "image": "/assets/risk-management-compliance.webp",
+  "it": {
+   "label": "Gestione del rischio e compliance",
+   "title": "Avvocato per risk management e compliance aziendale",
+   "description": "Gestione del rischio e compliance per le imprese: anticorruzione, corporate governance, protezione dei dati, protocolli interni e rapporti con le autorità.",
+   "summary": "Aiutiamo le imprese a individuare i rischi, predisporre strategie di prevenzione e mantenere le strutture societarie conformi alle normative."
+  },
+  "en": {
+   "label": "Risk Management and Compliance",
+   "title": "Risk management and corporate compliance lawyer",
+   "description": "Risk management and compliance for businesses: anti-corruption, governance, data protection, internal protocols and dealings with supervisory authorities.",
+   "summary": "We help businesses identify risks, design prevention strategies and keep corporate structures aligned with local and international regulations."
+  },
+  "es": {
+   "label": "Gestión de riesgos y cumplimiento",
+   "title": "Abogado de gestión de riesgos y cumplimiento normativo",
+   "description": "Gestión de riesgos y cumplimiento normativo para empresas: anticorrupción, gobierno corporativo, protección de datos, protocolos internos y autoridades.",
+   "summary": "Ayudamos a las empresas a identificar riesgos, diseñar estrategias de prevención y mantener sus estructuras corporativas conformes a la normativa."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "amministrazione",
+  "path": "/aree-di-attivita/impresa/amministrazione-e-controllo/",
+  "parent": "/aree-di-attivita/impresa/",
+  "order": 3,
+  "kind": "page",
+  "image": "/assets/amministrazione-controllo-giudiziario.webp",
+  "it": {
+   "label": "Amministrazione e controllo giudiziario",
+   "title": "Amministrazione giudiziaria di aziende e beni",
+   "description": "Amministrazione giudiziaria di aziende e beni sequestrati o confiscati, nel rispetto del Codice antimafia (D.Lgs. 159/2011), con rendiconti al giudice delegato.",
+   "summary": "Gestione e supervisione di aziende, beni e patrimoni affidati ad amministratori giudiziari nei procedimenti di sequestro e confisca."
+  },
+  "en": {
+   "label": "Judicial Administration and Control",
+   "title": "Judicial administration of companies and assets",
+   "description": "Judicial administration and control of seized or confiscated companies and assets under the Italian Anti-Mafia Code (Legislative Decree 159/2011).",
+   "summary": "Management and supervision of companies, assets and estates entrusted to judicial administrators in seizure and confiscation proceedings."
+  },
+  "es": {
+   "label": "Administración y control judicial",
+   "title": "Administración judicial de empresas y bienes",
+   "description": "Administración y control judicial de empresas y bienes embargados o decomisados conforme al Código Antimafia italiano (Decreto Legislativo 159/2011).",
+   "summary": "Gestión y supervisión de empresas, bienes y patrimonios confiados a administradores judiciales en procedimientos de embargo y decomiso."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "art-advisory",
+  "path": "/aree-di-attivita/impresa/art-advisory/",
+  "parent": "/aree-di-attivita/impresa/",
+  "order": 4,
+  "kind": "page",
+  "image": "/assets/art-advisory.webp",
+  "it": {
+   "label": "Art Advisory",
+   "title": "Avvocato per il diritto dell'arte e art advisory",
+   "description": "Consulenza legale e advisory per opere d'arte e collectibles: compravendite, due diligence e provenienza, compliance, diritti, restituzioni e contenzioso.",
+   "summary": "Il Dipartimento Art Advisor affianca collezionisti, fondazioni, gallerie, musei e case d'asta nella gestione giuridica e strategica di opere d'arte."
+  },
+  "en": {
+   "label": "Art Advisory",
+   "title": "Art law attorney and art advisory services",
+   "description": "Legal and market advisory for fine art and collectibles: sales, provenance due diligence, compliance, IP rights, collection structures and disputes.",
+   "summary": "Our Art Advisor Department supports collectors, foundations, galleries, museums and auction houses with legal and market advisory for fine art."
+  },
+  "es": {
+   "label": "Art Advisory",
+   "title": "Abogado de derecho del arte y art advisory",
+   "description": "Asesoría jurídica y de mercado para obras de arte y coleccionables: compraventas, procedencia, cumplimiento, derechos, estructuras patrimoniales y litigios.",
+   "summary": "Nuestro Departamento Art Advisor acompaña a coleccionistas, fundaciones, galerías, museos y casas de subastas en la gestión jurídica y estratégica del arte."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "cyber-crime",
+  "path": "/aree-di-attivita/impresa/cyber-crime/",
+  "parent": "/aree-di-attivita/impresa/",
+  "order": 5,
+  "kind": "page",
+  "image": "/assets/crimini-informatici.webp",
+  "it": {
+   "label": "Crimini informatici",
+   "title": "Avvocato per crimini informatici e cyber crime",
+   "description": "Assistenza legale in materia di crimini informatici: frodi online, violazioni dei dati, furto d'identità, attacchi informatici e diritto d'autore digitale.",
+   "summary": "Difesa e tutela in casi di frodi online, data breach, furto d'identità e attacchi informatici, anche in procedimenti che superano i confini nazionali."
+  },
+  "en": {
+   "label": "Cyber Crime",
+   "title": "Cyber crime lawyer for individuals and companies",
+   "description": "Legal assistance in cyber crime cases: online fraud, data breaches, identity theft, hacking and digital copyright violations, in Italy and across borders.",
+   "summary": "Defense and protection in cases of online fraud, data breaches, identity theft and hacking, including proceedings that extend beyond national borders."
+  },
+  "es": {
+   "label": "Ciberdelitos",
+   "title": "Abogado especialista en ciberdelitos",
+   "description": "Asesoramiento jurídico en ciberdelitos: fraude en línea, violaciones de datos, robo de identidad, ataques informáticos y derechos de autor digitales.",
+   "summary": "Defensa y protección en casos de fraude en línea, violaciones de datos, robo de identidad y ataques informáticos, también más allá de las fronteras nacionales."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "italia",
+  "path": "/aree-di-attivita/italia/",
+  "parent": "/aree-di-attivita/",
+  "order": 3,
+  "kind": "page",
+  "image": "/assets/diritto-italiano.webp",
+  "it": {
+   "label": "Diritto italiano",
+   "title": "Contenzioso in Italia: civile, penale e amministrativo",
+   "description": "La sede italiana dello Studio Legale Circosta assiste i clienti nel contenzioso civile, penale, amministrativo e contabile, con attenzione al diritto europeo.",
+   "summary": "La sede italiana dello Studio ha una forte vocazione processuale: rappresentanza in giudizio davanti ai tribunali civili, penali, amministrativi e contabili."
+  },
+  "en": {
+   "label": "Italian Law",
+   "title": "Litigation in Italy: civil, criminal and administrative",
+   "description": "The Italian branch of the Circosta Law Firm represents clients in civil, criminal, administrative and accounting litigation, with an eye on EU law.",
+   "summary": "The Italian branch of the Firm is strongly focused on litigation, representing clients before civil, criminal, administrative and accounting courts."
+  },
+  "es": {
+   "label": "Derecho italiano",
+   "title": "Litigios en Italia: civil, penal y administrativo",
+   "description": "La sede italiana del Despacho Circosta representa a sus clientes en litigios civiles, penales, administrativos y contables, atendiendo al Derecho europeo.",
+   "summary": "La sede italiana del Despacho tiene una marcada orientación procesal: representación ante tribunales civiles, penales, administrativos y contables."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-civile",
+  "path": "/aree-di-attivita/italia/diritto-civile/",
+  "parent": "/aree-di-attivita/italia/",
+  "order": 1,
+  "kind": "page",
+  "image": "/assets/diritto-civile.webp",
+  "it": {
+   "label": "Diritto civile",
+   "title": "Avvocato civilista: contratti, famiglia e successioni",
+   "description": "Assistenza in diritto civile: contenzioso su contratti, proprietà, famiglia, successioni e responsabilità civile, anche con elementi transnazionali.",
+   "summary": "Rappresentanza in giudizio e assistenza stragiudiziale per privati e imprese in materia di contratti, proprietà, famiglia, successioni e responsabilità civile."
+  },
+  "en": {
+   "label": "Civil Law",
+   "title": "Civil law attorney: contracts, family and inheritance",
+   "description": "Civil law assistance: litigation on contracts, property, family matters, inheritance and liability, including cross-border cases, for individuals and firms.",
+   "summary": "Court representation and out-of-court assistance for individuals and companies in contracts, property, family matters, inheritance and civil liability."
+  },
+  "es": {
+   "label": "Derecho civil",
+   "title": "Abogado civilista: contratos, familia y sucesiones",
+   "description": "Asesoramiento en Derecho civil: litigios sobre contratos, propiedad, familia, sucesiones y responsabilidad civil, también en asuntos civiles transfronterizos.",
+   "summary": "Representación judicial y asistencia extrajudicial a particulares y empresas en contratos, propiedad, familia, sucesiones y responsabilidad civil."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-penale",
+  "path": "/aree-di-attivita/italia/diritto-penale/",
+  "parent": "/aree-di-attivita/italia/",
+  "order": 2,
+  "kind": "page",
+  "image": "/assets/diritto-penale.webp",
+  "it": {
+   "label": "Diritto penale",
+   "title": "Avvocato penalista: indagini, processi e impugnazioni",
+   "description": "Difesa penale per privati e imprese: indagini, processi e impugnazioni per reati economici e societari, contro la persona e il patrimonio, e cyber crime.",
+   "summary": "Difesa solida ed efficace in diritto penale per privati e imprese, dalle prime fasi delle indagini fino al processo e alle impugnazioni."
+  },
+  "en": {
+   "label": "Criminal Law",
+   "title": "Criminal lawyer: investigations, trials and appeals",
+   "description": "Criminal defence for individuals and companies in investigations, trials and appeals: economic and corporate crimes, offences against persons, cyber crime.",
+   "summary": "Strong and effective criminal defence for individuals and companies, from the earliest stages of investigation through trial and appeal."
+  },
+  "es": {
+   "label": "Derecho penal",
+   "title": "Abogado penalista: investigaciones, juicios y recursos",
+   "description": "Defensa penal de particulares y empresas en investigaciones, juicios y recursos: delitos económicos, contra las personas y el patrimonio, y ciberdelitos.",
+   "summary": "Defensa firme y eficaz en Derecho penal para particulares y empresas, desde las primeras fases de la investigación hasta el juicio y los recursos."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "diritto-amministrativo",
+  "path": "/aree-di-attivita/italia/diritto-amministrativo/",
+  "parent": "/aree-di-attivita/italia/",
+  "order": 3,
+  "kind": "page",
+  "image": "/assets/diritto-amministrativo.webp",
+  "it": {
+   "label": "Diritto amministrativo",
+   "title": "Avvocato amministrativista: appalti, TAR e urbanistica",
+   "description": "Assistenza in diritto amministrativo per privati, imprese ed enti: contenzioso davanti ai tribunali amministrativi, appalti pubblici, concessioni e urbanistica.",
+   "summary": "Assistenza a privati, imprese ed enti pubblici nei rapporti con la Pubblica Amministrazione, dalla consulenza preventiva alla difesa davanti ai tribunali amministrativi."
+  },
+  "en": {
+   "label": "Administrative Law",
+   "title": "Administrative law attorney: tenders, permits, planning",
+   "description": "Administrative law for individuals, companies and institutions: litigation before administrative courts, public procurement, concessions and urban planning.",
+   "summary": "Assistance to individuals, companies and institutions in their relations with public authorities, from preventive advice to defence before administrative courts."
+  },
+  "es": {
+   "label": "Derecho administrativo",
+   "title": "Abogado administrativista: licitaciones y urbanismo",
+   "description": "Derecho administrativo para particulares, empresas e instituciones: procesos contencioso-administrativos, contratación pública, concesiones y urbanismo.",
+   "summary": "Asesoramiento a particulares, empresas e instituciones en sus relaciones con la Administración Pública, desde la consultoría preventiva hasta la defensa procesal."
+  },
+  "imageFull": true
+ },
+ {
+  "id": "dove-operiamo",
+  "path": "/dove-operiamo/",
+  "parent": "/",
+  "order": 3,
+  "kind": "index",
+  "image": "/assets/6b16402ea0a7.webp",
+  "it": {
+   "label": "Dove operiamo",
+   "title": "Dove operiamo: assistenza legale in Italia e nel mondo",
+   "description": "Dal diritto nazionale agli scenari globali: lo Studio Legale Circosta affianca i clienti in Europa, Africa, Americhe, Asia e Medio Oriente. Scopri le aree.",
+   "summary": "Dal diritto nazionale agli scenari globali, sempre al fianco dei clienti: le aree geografiche in cui opera lo Studio Legale Circosta."
+  },
+  "en": {
+   "label": "Where We Operate",
+   "title": "Where we operate: legal assistance in Italy and abroad",
+   "description": "From national law to global landscapes: the Circosta Law Firm stands by its clients in Europe, Africa, the Americas, Asia and the Middle East. See our areas.",
+   "summary": "From national law to global landscapes, always by our clients’ side: the geographical areas in which the Circosta Law Firm operates."
+  },
+  "es": {
+   "label": "Dónde operamos",
+   "title": "Dónde operamos: asistencia legal en Italia y el mundo",
+   "description": "Del Derecho nacional a los escenarios globales: el Despacho Circosta acompaña a sus clientes en Europa, África, América, Asia y Oriente Medio.",
+   "summary": "Del Derecho nacional a los escenarios globales, siempre al lado de nuestros clientes: las áreas geográficas en las que opera el Despacho Circosta."
+  }
+ },
+ {
+  "id": "europa",
+  "path": "/dove-operiamo/europa/",
+  "parent": "/dove-operiamo/",
+  "order": 1,
+  "kind": "region",
+  "image": "/assets/0d05ea77f191.webp",
+  "it": {
+   "label": "Europa",
+   "title": "Avvocato internazionale in Europa",
+   "description": "Presenza legale in tutta Europa: lo Studio Legale Circosta assiste i clienti nelle questioni transfrontaliere e nei rapporti con le giurisdizioni locali.",
+   "summary": "Presenza legale in tutta Europa per assistere i clienti nelle questioni transfrontaliere e davanti alle giurisdizioni locali."
+  },
+  "en": {
+   "label": "Europe",
+   "title": "International lawyer in Europe",
+   "description": "Legal presence across Europe: the Circosta Law Firm supports clients in cross-border matters and in dealings with local jurisdictions throughout the continent.",
+   "summary": "Legal presence across Europe to support clients in cross-border matters and before local jurisdictions."
+  },
+  "es": {
+   "label": "Europa",
+   "title": "Abogado internacional en Europa",
+   "description": "Presencia jurídica en toda Europa: el Despacho Circosta asiste a sus clientes en asuntos transfronterizos y en sus relaciones con las jurisdicciones locales.",
+   "summary": "Presencia jurídica en toda Europa para asistir a los clientes en asuntos transfronterizos y ante las jurisdicciones locales."
+  }
+ },
+ {
+  "id": "medio-oriente",
+  "path": "/dove-operiamo/medio-oriente/",
+  "parent": "/dove-operiamo/",
+  "order": 2,
+  "kind": "region",
+  "image": "/assets/90159024691d.webp",
+  "it": {
+   "label": "Medio Oriente",
+   "title": "Avvocato per il Medio Oriente: contratti e compliance",
+   "description": "Lo Studio Legale Circosta assiste clienti in Medio Oriente: contratti internazionali, compliance, diritto societario, arbitrato e gestione delle controversie.",
+   "summary": "Assistenza legale in Arabia Saudita, Bahrein, Emirati Arabi Uniti, Oman e Qatar, unendo conoscenza locale ed esperienza internazionale."
+  },
+  "en": {
+   "label": "Middle East",
+   "title": "Lawyer for the Middle East: contracts and compliance",
+   "description": "The Circosta Law Firm assists clients in the Middle East with international contracts, compliance, corporate law, arbitration and dispute resolution.",
+   "summary": "Legal assistance in Saudi Arabia, Bahrain, the United Arab Emirates, Oman and Qatar, combining local knowledge with international expertise."
+  },
+  "es": {
+   "label": "Oriente Medio",
+   "title": "Abogado para Oriente Medio: contratos y compliance",
+   "description": "El Despacho Circosta asiste a clientes en Oriente Medio en contratos internacionales, cumplimiento normativo, derecho societario, arbitraje y controversias.",
+   "summary": "Asistencia jurídica en Arabia Saudí, Baréin, Emiratos Árabes Unidos, Omán y Catar, combinando conocimiento local y experiencia internacional."
+  }
+ },
+ {
+  "id": "africa",
+  "path": "/dove-operiamo/africa/",
+  "parent": "/dove-operiamo/",
+  "order": 3,
+  "kind": "region",
+  "image": "/assets/fc28f3524ffc.webp",
+  "it": {
+   "label": "Africa",
+   "title": "Avvocato per l'Africa: diritto d'impresa e compliance",
+   "description": "Lo Studio Legale Circosta assiste imprese e privati in Africa: contratti internazionali, diritto commerciale, compliance e risoluzione delle controversie.",
+   "summary": "Assistenza legale a imprese e privati in numerosi Paesi africani, dal Marocco al Sudafrica, per chi opera tra l'Africa e l'Europa."
+  },
+  "en": {
+   "label": "Africa",
+   "title": "Lawyer for Africa: business law and compliance",
+   "description": "The Circosta Law Firm assists companies and individuals across Africa with international contracts, business law, compliance and dispute resolution.",
+   "summary": "Legal assistance for companies and individuals in many African countries, from Morocco to South Africa, for those operating between Africa and Europe."
+  },
+  "es": {
+   "label": "África",
+   "title": "Abogado para África: derecho mercantil y compliance",
+   "description": "El Despacho Circosta asiste a empresas y particulares en África en contratos internacionales, derecho mercantil, cumplimiento normativo y controversias.",
+   "summary": "Asistencia jurídica a empresas y particulares en numerosos países africanos, de Marruecos a Sudáfrica, para quienes operan entre África y Europa."
+  }
+ },
+ {
+  "id": "asia",
+  "path": "/dove-operiamo/asia/",
+  "parent": "/dove-operiamo/",
+  "order": 4,
+  "kind": "region",
+  "image": "/assets/b2da0b1e7f09.webp",
+  "it": {
+   "label": "Asia",
+   "title": "Avvocato per l'Asia: contratti e diritto d'impresa",
+   "description": "Lo Studio Legale Circosta assiste imprese e investitori in Asia e Russia: contratti internazionali, diritto societario, compliance e contenzioso.",
+   "summary": "Assistenza legale a imprese e investitori in Cina, Giappone, India, Russia e altri Paesi asiatici nei rapporti con l'Europa."
+  },
+  "en": {
+   "label": "Asia",
+   "title": "Lawyer for Asia: contracts and business law",
+   "description": "The Circosta Law Firm assists companies and investors in Asia and Russia with international contracts, corporate law, compliance and dispute resolution.",
+   "summary": "Legal assistance for companies and investors in China, Japan, India, Russia and other Asian countries in their dealings with Europe."
+  },
+  "es": {
+   "label": "Asia",
+   "title": "Abogado para Asia: contratos y derecho mercantil",
+   "description": "El Despacho Circosta asiste a empresas e inversores en Asia y Rusia en contratos internacionales, derecho societario, cumplimiento normativo y controversias.",
+   "summary": "Asistencia jurídica a empresas e inversores en China, Japón, la India, Rusia y otros países asiáticos en sus relaciones con Europa."
+  }
+ },
+ {
+  "id": "americhe",
+  "path": "/dove-operiamo/americhe/",
+  "parent": "/dove-operiamo/",
+  "order": 5,
+  "kind": "region",
+  "image": "/assets/d1ccd728c5fe.webp",
+  "it": {
+   "label": "Americhe",
+   "title": "Avvocato per le Americhe: contratti e compliance",
+   "description": "Lo Studio Legale Circosta assiste imprese e privati in Nord, Centro e Sud America: contratti internazionali, compliance, diritto societario e controversie.",
+   "summary": "Assistenza legale in Canada e in America Centrale e Meridionale per le operazioni transfrontaliere tra le Americhe e l'Europa."
+  },
+  "en": {
+   "label": "Americas",
+   "title": "Lawyer for the Americas: contracts and compliance",
+   "description": "The Circosta Law Firm assists companies and individuals in North, Central and South America with international contracts, compliance and corporate law.",
+   "summary": "Legal assistance in Canada and in Central and South America for cross-border operations between the Americas and Europe."
+  },
+  "es": {
+   "label": "Américas",
+   "title": "Abogado para las Américas: contratos y compliance",
+   "description": "El Despacho Circosta asiste a empresas y particulares en Norteamérica, Centroamérica y Sudamérica en contratos internacionales, compliance y derecho societario.",
+   "summary": "Asistencia jurídica en Canadá y en América Central y del Sur para las operaciones transfronterizas entre las Américas y Europa."
+  }
+ },
+ {
+  "id": "contatti",
+  "path": "/contatti/",
+  "parent": "/",
+  "order": 4,
+  "kind": "contact",
+  "image": "/assets/719a5c9dc729.webp",
+  "it": {
+   "label": "Contatti",
+   "title": "Contatti e sedi a Gioiosa Ionica, Reggio, Roma, Milano",
+   "description": "Contatta lo Studio Legale Circosta: sedi a Gioiosa Ionica, Reggio Calabria, Roma e Milano, telefono, e-mail, PEC e modulo per chiedere di essere ricontattati.",
+   "summary": "Sedi, recapiti telefonici, e-mail e PEC dello Studio Legale Circosta, con il modulo per chiedere di essere ricontattati."
+  },
+  "en": {
+   "label": "Contact",
+   "title": "Contact us: Gioiosa Ionica, Reggio, Rome, Milan",
+   "description": "Contact the Circosta Law Firm: offices in Gioiosa Ionica, Reggio Calabria, Rome and Milan, phone, e-mail, PEC and an online call-back request form.",
+   "summary": "Offices, phone numbers, e-mail and PEC addresses of the Circosta Law Firm, with an online form to request a call back."
+  },
+  "es": {
+   "label": "Contacto",
+   "title": "Contacto: Gioiosa Ionica, Reggio, Roma y Milán",
+   "description": "Contacte con el Despacho Circosta: sedes en Gioiosa Ionica, Reggio Calabria, Roma y Milán, teléfono, correo electrónico, PEC y formulario de contacto.",
+   "summary": "Sedes, teléfonos, correos electrónicos y PEC del Despacho Circosta, con el formulario para solicitar que el Despacho se ponga en contacto con usted."
+  }
+ },
+ {
+  "id": "note-legali",
+  "path": "/note-legali/",
+  "parent": "/",
+  "order": 5,
+  "kind": "page",
+  "image": "/assets/318a20b4cef1.webp",
+  "it": {
+   "label": "Note legali",
+   "title": "Note legali e informazioni obbligatorie",
+   "description": "Note legali del sito dello Studio Legale Circosta: informazioni obbligatorie ex D.Lgs. 70/2003, recapiti, iscrizione all’Ordine e politica deontologica.",
+   "summary": "Informazioni generali obbligatorie ex Decreto Legislativo 70/2003, recapiti dello Studio e politica deontologica dell’Avv. Antonio Circosta."
+  },
+  "en": {
+   "label": "Legal Notice",
+   "title": "Legal notice and mandatory information",
+   "description": "Legal notice of the Circosta Law Firm website: mandatory information under Legislative Decree 70/2003, contact details, Bar membership and code of conduct.",
+   "summary": "Mandatory general information under Legislative Decree 70/2003, the Firm’s contact details and the professional conduct policy of Avv. Antonio Circosta."
+  },
+  "es": {
+   "label": "Aviso legal",
+   "title": "Aviso legal e información obligatoria",
+   "description": "Aviso legal del sitio web del Despacho Circosta: información obligatoria según el Decreto Legislativo 70/2003, datos de contacto, colegiación y deontología.",
+   "summary": "Información general obligatoria según el Decreto Legislativo 70/2003, datos de contacto del Despacho y política deontológica del abogado Antonio Circosta."
+  }
+ },
+ {
+  "id": "privacy",
+  "path": "/privacy-policy/",
+  "parent": "/",
+  "order": 6,
+  "kind": "page",
+  "image": null,
+  "it": {
+   "label": "Privacy Policy",
+   "title": "Informativa sul trattamento dei dati personali",
+   "description": "Informativa privacy dello Studio Legale Circosta: titolare, dati trattati, hosting, modulo di contatto, assenza di cookie e diritti dell’interessato (GDPR).",
+   "summary": "Come vengono trattati i dati di chi visita il sito o contatta lo Studio: hosting, modulo di contatto, nessun cookie, diritti GDPR."
+  },
+  "en": {
+   "label": "Privacy Policy",
+   "title": "Privacy policy and personal data processing",
+   "description": "Privacy notice of the Circosta Law Firm: data controller, data processed, hosting, contact form, no cookies and your rights under the GDPR.",
+   "summary": "How we process the data of website visitors and of those who contact the firm: hosting, contact form, no cookies, GDPR rights."
+  },
+  "es": {
+   "label": "Política de privacidad",
+   "title": "Política de privacidad y tratamiento de datos",
+   "description": "Política de privacidad del Despacho Circosta: responsable, datos tratados, alojamiento, formulario de contacto, sin cookies y derechos del RGPD.",
+   "summary": "Cómo se tratan los datos de quienes visitan el sitio o contactan con el Despacho: alojamiento, formulario, sin cookies, derechos RGPD."
+  }
+ },
+ {
+  "id": "mappa",
+  "path": "/mappa-del-sito/",
+  "parent": "/",
+  "order": 7,
+  "kind": "sitemap",
+  "image": null,
+  "it": {
+   "label": "Mappa del sito",
+   "title": "Mappa del sito",
+   "description": "Mappa del sito dello Studio Legale Circosta: l’elenco completo delle pagine, delle aree di attività e delle aree geografiche in cui opera lo Studio.",
+   "summary": "L’elenco completo delle pagine del sito dello Studio Legale Circosta."
+  },
+  "en": {
+   "label": "Sitemap",
+   "title": "Sitemap",
+   "description": "Sitemap of the Circosta Law Firm website: the complete list of pages, practice areas and geographic regions in which the Firm operates, at a glance.",
+   "summary": "The complete list of pages on the Circosta Law Firm website."
+  },
+  "es": {
+   "label": "Mapa del sitio",
+   "title": "Mapa del sitio",
+   "description": "Mapa del sitio web del Despacho Circosta: la lista completa de las páginas, las áreas de práctica y las áreas geográficas en las que opera el Despacho.",
+   "summary": "La lista completa de las páginas del sitio web del Despacho Circosta."
+  }
+ }
+]

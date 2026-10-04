@@ -1,0 +1,199 @@
+{
+ "nav": {
+  "about": "El Despacho",
+  "practice": "Áreas de Práctica",
+  "global": "Dónde Operamos",
+  "method": "Nuestro Método",
+  "contact": "Contacto",
+  "cta": "Solicitar Consulta"
+ },
+ "hero": {
+  "overline": "Despacho de Abogados Internacional",
+  "titleLines": [
+   "El derecho como brújula",
+   "para las decisiones empresariales."
+  ],
+  "subtitle": "Asesoramiento en derecho internacional, derecho societario, gestión de riesgos y cumplimiento normativo. Apoyo global a empresas y particulares, con rigor, confidencialidad y visión estratégica.",
+  "ctaPrimary": "Explorar las Áreas de Práctica",
+  "ctaSecondary": "Contactar con el Despacho",
+  "badges": [
+   "Derecho Internacional",
+   "Decreto Legislativo 231/01",
+   "Arbitraje",
+   "RGPD y Compliance"
+  ],
+  "statAreas": "Áreas de práctica",
+  "statReach": "Áreas geográficas",
+  "scroll": "Desplácese para descubrir"
+ },
+ "marquee": [
+  "Derecho Internacional",
+  "Arbitraje Comercial",
+  "Compliance Decreto Legislativo 231/01",
+  "Contratos Transfronterizos",
+  "Derecho Societario",
+  "Protección de Datos RGPD",
+  "Litigios Civiles y Penales",
+  "Gestión de Riesgos"
+ ],
+ "about": {
+  "overline": "El Despacho",
+  "title": "Rigor jurídico, conocimiento de los mercados, sensibilidad ética.",
+  "p1": "Un enfoque multidisciplinar que garantiza soluciones personalizadas y sostenibles. El Despacho sitúa la confianza como fundamento de la relación profesional y ofrece un asesoramiento transparente y confidencial, siempre orientado a resultados.",
+  "p2": "De Calabria a los mercados globales: el Despacho AC Law Firm acompaña a empresas y particulares en las operaciones que importan, uniendo tradición jurídica y pragmatismo internacional.",
+  "founderName": "Avv. Antonio Circosta",
+  "founderRole": "Fundador — Studio Legale AC Law Firm",
+  "founderBadge": "Colegio de Abogados de Reggio Calabria",
+  "valuesTitle": "Nuestros principios",
+  "values": [
+   "Rigor jurídico",
+   "Conocimiento de los mercados",
+   "Sensibilidad ética",
+   "Confidencialidad absoluta"
+  ]
+ },
+ "practice": {
+  "overline": "Áreas de Práctica",
+  "title": "Cuatro pilares, una única dirección.",
+  "subtitle": "Cada mandato se gestiona con una visión de conjunto: derecho, mercados y geopolítica convergen en una única estrategia.",
+  "areas": [
+   {
+    "title": "Derecho Internacional",
+    "desc": "Contratos transnacionales, litigios internacionales, arbitrajes y protección de los derechos fundamentales.",
+    "subs": [
+     "Contratación transfronteriza",
+     "Arbitrajes internacionales",
+     "Contencioso de la UE",
+     "Derechos fundamentales"
+    ]
+   },
+   {
+    "title": "Derecho Societario y Mercantil",
+    "desc": "Asesoramiento en operaciones societarias extraordinarias, gobierno corporativo y gestión de las relaciones societarias.",
+    "subs": [
+     "M&A y operaciones extraordinarias",
+     "Gobierno corporativo",
+     "Joint ventures",
+     "Relaciones societarias"
+    ]
+   },
+   {
+    "title": "Gestión de Riesgos y Compliance",
+    "desc": "Modelos de organización conforme al Decreto Legislativo 231/2001, prevención de riesgos, anticorrupción y protección de datos.",
+    "subs": [
+     "Modelos 231/01 y Organismo de Vigilancia",
+     "Anticorrupción",
+     "RGPD y DPD",
+     "Gobernanza de Datos"
+    ]
+   },
+   {
+    "title": "Asistencia Judicial y Extrajudicial",
+    "desc": "Defensa técnica en sede civil, penal y contencioso-administrativa, con soluciones adaptadas a las necesidades del cliente.",
+    "subs": [
+     "Litigios civiles",
+     "Derecho penal empresarial",
+     "Contencioso-administrativo",
+     "Negociación"
+    ]
+   }
+  ]
+ },
+ "global": {
+  "overline": "Dónde Operamos",
+  "title": "Geopolítica y estrategias globales.",
+  "body": "Las dinámicas internacionales influyen en los mercados y en las empresas. El Despacho ofrece asesoramiento para transformar los cambios geopolíticos en decisiones societarias informadas, integrando derecho internacional, gestión de riesgos y cumplimiento normativo.",
+  "regions": [
+   {
+    "name": "Italia y Unión Europea",
+    "desc": "Sede principal y presencia consolidada en el Derecho de la Unión, ante las jurisdicciones nacionales y europeas."
+   },
+   {
+    "name": "Suiza y Reino Unido",
+    "desc": "Contratación y estructuras societarias en los principales centros financieros extracomunitarios."
+   },
+   {
+    "name": "Oriente Medio y Golfo",
+    "desc": "Asesoramiento en inversiones y joint ventures en los mercados del Golfo y del Mediterráneo ampliado."
+   },
+   {
+    "name": "Américas y Asia",
+    "desc": "Coordinación con corresponsales locales para operaciones transfronterizas y protección patrimonial."
+   }
+  ]
+ },
+ "method": {
+  "overline": "Nuestro Método",
+  "title": "Un proceso en cuatro fases.",
+  "steps": [
+   {
+    "title": "Análisis y Auditoría de Riesgos",
+    "desc": "Mapeo preliminar del perímetro jurídico y de los riesgos operativos del cliente."
+   },
+   {
+    "title": "Estrategia Jurídica Integrada",
+    "desc": "Una arquitectura jurídica a medida, que integra derecho, mercados y escenario geopolítico."
+   },
+   {
+    "title": "Negociación y Redacción",
+    "desc": "Contratos y documentos negociales redactados con precisión, también en contextos multilingües."
+   },
+   {
+    "title": "Ejecución y Seguimiento",
+    "desc": "Asistencia judicial y seguimiento continuo del cumplimiento normativo a lo largo del tiempo."
+   }
+  ]
+ },
+ "contact": {
+  "overline": "Contacto",
+  "title": "Solicite una consulta confidencial.",
+  "subtitle": "Cada solicitud se trata con absoluta confidencialidad. El Despacho responde en un plazo de 24 horas hábiles.",
+  "addressLabel": "Sede",
+  "address": "Traversa I Via Gramsci 2, 89042 Gioiosa Ionica (RC), Italia",
+  "phoneLabel": "Teléfono",
+  "phone": "+39 0965 890508",
+  "emailLabel": "Correo electrónico",
+  "email": "info@aclawfirm.eu",
+  "pecLabel": "PEC (correo electrónico certificado)",
+  "pec": "avvcircosta@legpec.it",
+  "form": {
+   "name": "Nombre y apellidos",
+   "namePlaceholder": "Juan García",
+   "email": "Correo electrónico",
+   "emailPlaceholder": "nombre@empresa.com",
+   "phone": "Teléfono (opcional)",
+   "phonePlaceholder": "+34 ...",
+   "company": "Sociedad (opcional)",
+   "companyPlaceholder": "Empresa S.A.",
+   "area": "Área de práctica",
+   "areaPlaceholder": "Seleccione un área",
+   "areas": [
+    "Derecho Internacional",
+    "Derecho Societario y Mercantil",
+    "Gestión de Riesgos y Compliance",
+    "Asistencia Judicial y Extrajudicial",
+    "Otro"
+   ],
+   "message": "Mensaje",
+   "messagePlaceholder": "Describa brevemente su necesidad...",
+   "consent": "He leído la política de privacidad y consiento el tratamiento de mis datos para recibir respuesta a mi solicitud.",
+   "submit": "Enviar la solicitud",
+   "sending": "Enviando...",
+   "successTitle": "Solicitud enviada",
+   "successBody": "Gracias. El Despacho se pondrá en contacto con usted en breve.",
+   "errorTitle": "No se ha podido enviar",
+   "errorBody": "Inténtelo de nuevo dentro de unos instantes o escríbanos directamente por correo electrónico.",
+   "validation": "Cumplimente todos los campos obligatorios y acepte la política de privacidad."
+  }
+ },
+ "footer": {
+  "watermark": "AC LAW FIRM",
+  "tagline": "Despacho de Abogados Internacional",
+  "disclosure": "© 2026 Studio Legale AC Law Firm — Avv. Antonio Circosta · Traversa I Via Gramsci 2, 89042 Gioiosa Ionica (RC) · NIF-IVA IT 02573920804",
+  "deontological": "Información facilitada conforme al Código Deontológico de la Abogacía italiana",
+  "privacy": "Política de privacidad",
+  "backToTop": "Volver arriba",
+  "privacyTitle": "Política de privacidad",
+  "privacyBody": "Los datos enviados a través de este sitio web son tratados por el Studio Legale AC Law Firm exclusivamente para responder a las solicitudes de consulta, de conformidad con el Reglamento (UE) 2016/679 (RGPD). Responsable del tratamiento: Avv. Antonio Circosta, Traversa I Via Gramsci 2, 89042 Gioiosa Ionica (RC). Los datos no se ceden a terceros y se conservan durante el tiempo estrictamente necesario para gestionar la solicitud. Para ejercer sus derechos, escriba a info@aclawfirm.eu."
+ }
+}
