@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { withBase } from "@/lib/site";
 import { scrollToId } from "@/lib/scroll";
 import { LogoMark } from "@/components/Logo";
 
@@ -35,7 +36,7 @@ export default function Hero() {
     <section ref={ref} id="hero" data-testid="hero-section" className="relative min-h-screen overflow-hidden">
       <motion.div style={{ y: bgY }} className="absolute inset-0">
         <img
-          src={HERO_IMG}
+          src={withBase(HERO_IMG)}
           alt=""
           className="h-[120%] w-full object-cover object-center"
           loading="eager"

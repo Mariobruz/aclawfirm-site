@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Scale, Globe2, ShieldCheck, Lock, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { withBase } from "@/lib/site";
 
 const ABOUT_IMG =
   "/media/2d0bd3144cfec9.jpg";
@@ -23,7 +24,7 @@ export default function About() {
           <div className="absolute -inset-4 rounded-sm border border-[#C5A059]/25" />
           <div className="relative overflow-hidden rounded-sm">
             <img
-              src={ABOUT_IMG}
+              src={withBase(ABOUT_IMG)}
               alt="Studio Legale AC Law Firm"
               className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
               loading="lazy"

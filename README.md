@@ -57,15 +57,16 @@ Pubblicare il contenuto di `dist/` sulla radice di un hosting statico. `_redirec
 
 ### GitHub Pages
 
-Il file `.github/workflows/deploy.yml` compila e pubblica il sito a ogni push sul branch `main`, usando Node 22 sui server di GitHub.
+Il file `.github/workflows/deploy.yml` compila e pubblica il sito a ogni push sul branch `main`, usando Node 22 sui server di GitHub. Per attivarlo, sul repository vai in **Settings → Pages → Source** e scegli **GitHub Actions**.
 
-1. Sul repository vai in **Settings → Pages → Source** e scegli **GitHub Actions**.
-2. Su GitHub Pages i vecchi indirizzi sono gestiti con pagine di reindirizzamento statiche, generate dalla build.
-3. Il sito usa percorsi assoluti (`/chi-siamo/`), quindi va servito dalla radice di un dominio:
-   - **dominio personalizzato**: imposta `www.aclawfirm.eu` in Settings → Pages → Custom domain;
-   - **oppure** un repository chiamato `<utente>.github.io`.
+- **Ora, senza dominio:** il sito è su https://mariobruz.github.io/aclawfirm-site/. Tutti i link e le immagini sono già prefissati con `/aclawfirm-site/`.
+- **Con il dominio:**
+  1. In Settings → Secrets and variables → Actions → Variables crea `SITE_URL` = `https://www.aclawfirm.eu` e `BASE_PATH` = `/`.
+  2. In Settings → Pages → Custom domain imposta `www.aclawfirm.eu`.
+  3. Rilancia il workflow da **Actions**.
+- **I vecchi indirizzi** sono gestiti con pagine di reindirizzamento statiche, generate dalla build.
 
-Il dominio usato per canonical e sitemap è `https://www.aclawfirm.eu`. Si cambia in `scripts/prerender.mjs` e in `src/lib/site.ts`.
+Il dominio e il percorso base si impostano con le variabili `SITE_URL` e `BASE_PATH` al momento della build. In locale il default è `https://www.aclawfirm.eu` con base `/`.
 
 ## Da verificare con lo Studio
 

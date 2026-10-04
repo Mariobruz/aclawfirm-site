@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import { Toaster } from "@/components/ui/sonner";
 import { useLanguage } from "@/context/LanguageContext";
-import { ancestors, byPath, children, homeMeta, pages, type PageMeta } from "@/lib/site";
+import { ancestors, byPath, children, homeMeta, pages, withBase, type PageMeta } from "@/lib/site";
 
 function SitemapList() {
   const { lang, href } = useLanguage();
@@ -100,7 +100,7 @@ export default function ContentPage() {
             ) : (
               <>
                 {page.image && page.kind === "page" && (
-                  <figure className={`article-figure${page.imageFull ? " full" : ""}`}><img src={page.image} alt="" loading="lazy" /></figure>
+                  <figure className={`article-figure${page.imageFull ? " full" : ""}`}><img src={withBase(page.image)} alt="" loading="lazy" /></figure>
                 )}
                 {body?.html && <article className="legal-article" dangerouslySetInnerHTML={{ __html: body.html }} />}
               </>
@@ -113,7 +113,7 @@ export default function ContentPage() {
                   <div>
                     {countries.map((c) => (
                       <a key={c.slug} href={`#${c.slug}`}>
-                        {c.image ? <img src={c.image} alt="" loading="lazy" /> : <span className="country-initial">{c.name[0]}</span>}
+                        {c.image ? <img src={withBase(c.image)} alt="" loading="lazy" /> : <span className="country-initial">{c.name[0]}</span>}
                         <span>{c.name}</span>
                       </a>
                     ))}
@@ -122,7 +122,7 @@ export default function ContentPage() {
                 {countries.map((c) => (
                   <section key={c.slug} id={c.slug} className="country-block">
                     <header>
-                      {c.image && <img src={c.image} alt="" loading="lazy" />}
+                      {c.image && <img src={withBase(c.image)} alt="" loading="lazy" />}
                       <div>
                         <h2>{c.name}</h2>
                         <p>{c.summary}</p>

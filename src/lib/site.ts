@@ -35,8 +35,21 @@ export function splitPath(pathname: string): { lang: Lang; path: string } {
   return m ? { lang: m[1] as Lang, path: m[2] } : { lang: 'it', path: p };
 }
 
+/** Base path the site is served from ("/" on its own domain, "/aclawfirm-site/" on GitHub Pages). */
+export const BASE = import.meta.env.BASE_URL || '/';
+
+/** Prefixes an absolute site path ("/assets/x.webp", "/contatti/") with the base path. */
+export function withBase(p: string): string {
+  return p.startsWith('/') ? BASE + p.slice(1) : p;
+}
+
+/** Removes the base path from a browser pathname. */
+export function stripBase(pathname: string): string {
+  return BASE !== '/' && pathname.startsWith(BASE) ? '/' + pathname.slice(BASE.length) : pathname;
+}
+
 export function localize(path: string, lang: Lang): string {
-  return lang === 'it' ? path : `/${lang}${path}`;
+  return withBase(lang === 'it' ? path : `/${lang}${path}`);
 }
 
 export function children(path: string): PageMeta[] {

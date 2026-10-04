@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { MapPin } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { withBase } from "@/lib/site";
 import { children } from "@/lib/site";
 
 const GLOBAL_IMG =
@@ -19,7 +20,7 @@ export default function GlobalReach() {
   return (
     <section id="global" data-testid="global-section" className="relative overflow-hidden py-28 sm:py-36">
       <div className="absolute inset-0">
-        <img src={GLOBAL_IMG} alt="" className="h-full w-full object-cover opacity-25" loading="lazy" />
+        <img src={withBase(GLOBAL_IMG)} alt="" className="h-full w-full object-cover opacity-25" loading="lazy" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,#0B0D11_0%,rgba(11,13,17,0.86)_50%,#0B0D11_100%)]" />
       </div>
 

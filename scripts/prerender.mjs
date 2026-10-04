@@ -5,7 +5,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-const SITE = "https://www.aclawfirm.eu";
+const SITE = (process.env.SITE_URL || "https://www.aclawfirm.eu").replace(/\/$/, "");
+const BASE = process.env.BASE_PATH || "/";
+const wb = (p) => BASE + p.replace(/^\//, "");
 const LANGS = ["it", "en", "es"];
 const OG_LOCALE = { it: "it_IT", en: "en_GB", es: "es_ES" };
 const BRAND = "AC Law Firm";
@@ -22,11 +24,11 @@ const home = {
 
 const esc = (s) => String(s).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const loc = (p, l) => (l === "it" ? p : `/${l}${p}`);
-const abs = (p) => SITE + encodeURI(p);
+const abs = (p) => SITE + encodeURI(wb(p));
 const body = (l, id) => JSON.parse(fs.readFileSync(`src/content/body/${l}/${id}.json`, "utf8"));
 
 function page({ url, lang, title, description, neutral, image, bodyData, noindex = false }) {
-  const html = render(url, bodyData);
+  const html = render(wb(url), bodyData);
   const alternates = neutral
     ? [...LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${abs(loc(neutral, l))}">`), `<link rel="alternate" hreflang="x-default" href="${abs(neutral)}">`].join("\n    ")
     : "";
@@ -41,7 +43,7 @@ function page({ url, lang, title, description, neutral, image, bodyData, noindex
     `<meta property="og:title" content="${esc(title)}">`,
     `<meta property="og:description" content="${esc(description)}">`,
     `<meta property="og:url" content="${abs(url)}">`,
-    `<meta property="og:image" content="${SITE}${image || "/media/c59326797df727.jpg"}">`,
+    `<meta property="og:image" content="${SITE}${wb(image || "/media/c59326797df727.jpg")}">`,
   ].filter(Boolean).join("\n    ");
   return template
     .replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
@@ -81,12 +83,12 @@ for (const u of uniq) for (const l of LANGS) {
 }
 xml.push(`</urlset>`);
 fs.writeFileSync("dist/sitemap.xml", xml.join("\n") + "\n");
-fs.writeFileSync("dist/robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+fs.writeFileSync("dist/robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}${wb("/sitemap.xml")}\n`);
 
 // Permanent redirects from the old URLs (both accented and percent-encoded forms)
 const lines = [];
 for (const [from, to] of redirects) {
-  for (const f of new Set([from, encodeURI(from)])) lines.push(`${f} ${encodeURI(to).replace("%23", "#")} 301`);
+  for (const f of new Set([from, encodeURI(from)])) lines.push(`${wb(f)} ${encodeURI(wb(to)).replace("%23", "#")} 301`);
 }
 fs.writeFileSync("dist/_redirects", lines.join("\n") + "\n");
 
@@ -95,7 +97,7 @@ fs.writeFileSync("dist/_redirects", lines.join("\n") + "\n");
 for (const [from, to] of redirects) {
   const out = path.join("dist", from, "index.html");
   if (fs.existsSync(out)) continue;
-  const target = encodeURI(to).replace("%23", "#");
+  const target = encodeURI(wb(to)).replace("%23", "#");
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, `<!doctype html><html lang="it"><head><meta charset="utf-8"><title>AC Law Firm</title><link rel="canonical" href="${SITE}${target}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${target}"><script>location.replace(${JSON.stringify(target)})</script></head><body><a href="${target}">${target}</a></body></html>\n`);
 }

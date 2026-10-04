@@ -27,6 +27,10 @@ jobs:
       - run: npm run build
         env:
           VITE_WEB3FORMS_KEY: ${{ vars.WEB3FORMS_KEY }}
+          # Finché non c'è il dominio il sito è su https://mariobruz.github.io/aclawfirm-site/
+          # Con il dominio: impostare le variabili SITE_URL=https://www.aclawfirm.eu e BASE_PATH=/
+          SITE_URL: ${{ vars.SITE_URL || 'https://mariobruz.github.io' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/aclawfirm-site/' }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

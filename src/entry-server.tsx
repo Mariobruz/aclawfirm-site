@@ -1,11 +1,11 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
 import App from "./App";
-import type { PageBody } from "./lib/site";
+import { BASE, type PageBody } from "./lib/site";
 
 export function render(url: string, body: PageBody | null): string {
   return renderToString(
-    <StaticRouter location={url}>
+    <StaticRouter location={url} basename={BASE.replace(/\/$/, "") || undefined}>
       <App body={body} />
     </StaticRouter>,
   );
