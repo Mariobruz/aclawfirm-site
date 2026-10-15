@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Archivio del vecchio sito (non va su GitHub)
+_archivio/
