@@ -65,6 +65,7 @@ Il file `.github/workflows/deploy.yml` compila e pubblica il sito a ogni push su
   2. In Settings → Pages → Custom domain imposta `www.aclawfirm.eu`.
   3. Rilancia il workflow da **Actions**.
 - **I vecchi indirizzi** sono gestiti con pagine di reindirizzamento statiche, generate dalla build.
+- **Indicizzazione:** finché `SITE_URL` non è un indirizzo aclawfirm.eu, tutte le pagine hanno `noindex`, così Google non indicizza la copia provvisoria. Con il dominio, il blocco si toglie da solo.
 
 Il dominio e il percorso base si impostano con le variabili `SITE_URL` e `BASE_PATH` al momento della build. In locale il default è `https://www.aclawfirm.eu` con base `/`.
 

@@ -100,7 +100,7 @@ export default function ContentPage() {
             ) : (
               <>
                 {page.image && page.kind === "page" && (
-                  <figure className={`article-figure${page.imageFull ? " full" : ""}`}><img src={withBase(page.image)} alt="" loading="lazy" /></figure>
+                  <figure className={`article-figure${page.imageFull ? " full" : ""}`}><img src={withBase(page.image)} alt={`${text.label} — AC Law Firm`} loading="lazy" /></figure>
                 )}
                 {body?.html && <article className="legal-article" dangerouslySetInnerHTML={{ __html: body.html }} />}
               </>
@@ -122,7 +122,7 @@ export default function ContentPage() {
                 {countries.map((c) => (
                   <section key={c.slug} id={c.slug} className="country-block">
                     <header>
-                      {c.image && <img src={withBase(c.image)} alt="" loading="lazy" />}
+                      {c.image && <img src={withBase(c.image)} alt={c.name} loading="lazy" />}
                       <div>
                         <h2>{c.name}</h2>
                         <p>{c.summary}</p>

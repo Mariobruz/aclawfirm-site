@@ -10,3 +10,5 @@ export function render(url: string, body: PageBody | null): string {
     </StaticRouter>,
   );
 }
+
+export { offices, phones, emails, pec } from "./data/contacts";

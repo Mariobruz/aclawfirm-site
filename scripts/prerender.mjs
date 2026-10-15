@@ -12,7 +12,7 @@ const LANGS = ["it", "en", "es"];
 const OG_LOCALE = { it: "it_IT", en: "en_GB", es: "es_ES" };
 const BRAND = "AC Law Firm";
 
-const { render } = await import(pathToFileURL(path.resolve("dist-ssr/entry-server.js")).href);
+const { render, offices, phones, emails } = await import(pathToFileURL(path.resolve("dist-ssr/entry-server.js")).href);
 const pages = JSON.parse(fs.readFileSync("src/content/site.json", "utf8"));
 const redirects = JSON.parse(fs.readFileSync("scripts/redirects.json", "utf8"));
 const template = fs.readFileSync("dist/index.html", "utf8");
@@ -25,6 +25,50 @@ const home = {
 const esc = (s) => String(s).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const loc = (p, l) => (l === "it" ? p : `/${l}${p}`);
 const abs = (p) => SITE + encodeURI(wb(p));
+// While the site lives on a temporary address (e.g. github.io), keep it out of search engines.
+const NOINDEX = !/aclawfirm\.eu$/.test(new URL(SITE).hostname);
+const byPathMap = new Map(pages.map((p) => [p.path, p]));
+const HOME_LABEL = { it: "Home", en: "Home", es: "Inicio" };
+
+const POSTAL = /^(\d{5})\s+(.+?)(?:\s+\((\w{2})\))?$/;
+function postalAddress(o) {
+  const m = o.postal.match(POSTAL) || [];
+  return { "@type": "PostalAddress", streetAddress: o.street.replace(" — ", ", "), postalCode: m[1], addressLocality: m[2] || o.city, ...(m[3] ? { addressRegion: m[3] } : {}), addressCountry: "IT" };
+}
+
+function jsonLd(lang, neutral) {
+  const t = (p) => p[lang];
+  const areas = pages.filter((p) => p.path.startsWith("/aree-di-attivita/") && p.parent !== "/").map((p) => t(p).label);
+  const firm = {
+    "@type": "LegalService",
+    "@id": SITE + wb("/") + "#studio",
+    name: "AC Law Firm — Studio Legale Avv. Antonio Circosta",
+    alternateName: ["AC Law Firm", "Studio Legale Circosta"],
+    url: SITE + wb(loc("/", lang)),
+    logo: SITE + wb("/apple-touch-icon.png"),
+    image: SITE + wb("/media/c59326797df727.jpg"),
+    email: emails[0],
+    telephone: phones[0].display.replace(/\s/g, " "),
+    vatID: "IT02573920804",
+    address: postalAddress(offices[0]),
+    areaServed: ["Italia", "Unione Europea", "Internazionale"],
+    knowsLanguage: ["it", "en", "es"],
+    knowsAbout: areas,
+    founder: { "@type": "Person", name: "Antonio Circosta", jobTitle: lang === "it" ? "Avvocato" : lang === "es" ? "Abogado" : "Lawyer", memberOf: { "@type": "Organization", name: "Ordine degli Avvocati di Reggio Calabria" } },
+    department: offices.slice(1).map((o) => ({ "@type": "LegalService", name: `AC Law Firm — ${o.city}, ${o.street.split(" — ")[0]}`, address: postalAddress(o), telephone: (phones.find((p) => p.label === o.city) || phones[0]).display })),
+  };
+  const graph = [firm, { "@type": "WebSite", "@id": SITE + wb("/") + "#sito", url: SITE + wb("/"), name: BRAND, inLanguage: ["it", "en", "es"], publisher: { "@id": firm["@id"] } }];
+  if (neutral && neutral !== "/") {
+    const chain = [];
+    for (let p = byPathMap.get(neutral); p; p = byPathMap.get(p.parent)) chain.unshift(p);
+    graph.push({
+      "@type": "BreadcrumbList",
+      itemListElement: [{ path: "/", name: HOME_LABEL[lang] }, ...chain.map((p) => ({ path: p.path, name: t(p).label }))].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: abs(loc(c.path, lang)) })),
+    });
+  }
+  return `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c")}</script>`;
+}
+
 const body = (l, id) => JSON.parse(fs.readFileSync(`src/content/body/${l}/${id}.json`, "utf8"));
 
 function page({ url, lang, title, description, neutral, image, bodyData, noindex = false }) {
@@ -36,6 +80,7 @@ function page({ url, lang, title, description, neutral, image, bodyData, noindex
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}">`,
     noindex ? `<meta name="robots" content="noindex">` : `<link rel="canonical" href="${abs(url)}">`,
+    !noindex && NOINDEX ? `<meta name="robots" content="noindex, follow">` : "",
     alternates,
     `<meta property="og:type" content="website">`,
     `<meta property="og:site_name" content="${BRAND}">`,
@@ -44,6 +89,11 @@ function page({ url, lang, title, description, neutral, image, bodyData, noindex
     `<meta property="og:description" content="${esc(description)}">`,
     `<meta property="og:url" content="${abs(url)}">`,
     `<meta property="og:image" content="${SITE}${wb(image || "/media/c59326797df727.jpg")}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${esc(title)}">`,
+    `<meta name="twitter:description" content="${esc(description)}">`,
+    `<meta name="twitter:image" content="${SITE}${wb(image || "/media/c59326797df727.jpg")}">`,
+    noindex ? "" : jsonLd(lang, neutral),
   ].filter(Boolean).join("\n    ");
   return template
     .replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
