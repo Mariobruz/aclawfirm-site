@@ -11,7 +11,8 @@ export const phones = [
  {label:'Milano',display:'+39 02 93663813',href:'tel:+390293663813'},
  {label:'Mobile',display:'+39 333 1993273',href:'tel:+393331993273'},
 ];
-export const emails=['info@aclawfirm.eu','avvcircosta@aclawfirm.eu','natasa.circosta@aclawfirm.eu','avvcircosta@gmail.com'];
+// In ordine di importanza: casella generale, segreteria, avvocato titolare, collaboratrice, indirizzo personale.
+export const emails=['info@aclawfirm.eu','segreteria@aclawfirm.eu','avvcircosta@aclawfirm.eu','natasa.circosta@aclawfirm.eu','avvcircosta@gmail.com'];
 export const pec='avvcircosta@legpec.it';
 
 /**
